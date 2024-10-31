@@ -65,6 +65,7 @@ export async function weatherSearch(lat, lng) {
     longitude: lng.toString(),
     hourly: 'temperature_2m,precipitation',
     forecast_days: '1',
+    timezone: 'GMT'
   });
   url.search = querystring.toString();
 

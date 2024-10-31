@@ -77,6 +77,8 @@ main {
 
 .forecast {
   border-spacing: 0;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .forecast th,
@@ -85,6 +87,18 @@ main {
   text-align: left;
 }
 
-.forecast tbody tr:nth-child(2n + 1) {
-  background-color: var(--color-background-zebra);
+.forecast th {
+  background-color: #fff;
+  font-weight: bold;
 }
+
+.forecast tbody tr:nth-child(2n + 1) {
+  background-color: var(--color-background-zebra); 
+}
+
+.forecast tbody tr:nth-child(2n) {
+  background-color: #ffffff; 
+}
+
+
+
